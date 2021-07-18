@@ -1,0 +1,19 @@
+
+
+
+numberOfList = int(input('Enter unber of user: '))
+
+def func(numberOfList):
+        
+    num = 0 
+    box_1  = []
+    while num < numberOfList:
+        names = input('Enter name: ' )
+        box_1.append(names)
+        num += 1
+
+    return box_1
+
+fadhel = func(numberOfList)
+
+print(fadhel)
