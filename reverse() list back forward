@@ -1,0 +1,31 @@
+user = int(input('Enter number of list: '))
+
+therageof = range(1, user + 1)
+
+def myange(user):
+    boxOflist = []
+    for x in therageof:
+        boxOflist.append(x)
+    return boxOflist
+listof = myange(user)
+def num(listof):
+    box = []
+    while listof:
+        a = listof.pop(-1)
+        box.append(a)
+        while listof:
+            c = listof.pop(0)
+            box.append(c)
+            break
+
+    for x in box:
+        print(x)  
+num(listof)
+
+Input: Enter number of list: 5
+POutPut: 5
+         1
+         4
+         2
+         3
+         
