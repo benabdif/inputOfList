@@ -1,0 +1,21 @@
+def firstNonRepeatingCharacter(string):
+    box = []
+    box_1 = {}
+    for x in range(len(string)):
+        box.append(string[x])
+    for c in range(len(box)):
+        a = box[c]
+        if a not in box_1:
+            box_1[a] = 1
+        else:
+            box_1[a] = box_1[a] + 1
+    
+    for key, value in box_1.items():
+        if value == 1:
+			return string.index(key)
+	
+	return -1
+        
+	   
+string = 'absabsdabs'
+
