@@ -1,0 +1,33 @@
+
+num = [3,4,5,7,9]
+loopof = num[-1]
+def numm(num, loopof):
+    box = []
+    newbox = []
+    number = 0
+    while number < loopof:
+        for x in range(len(num)-1):
+            a = num[x]
+            b = num[x + 1]
+            box.append(a)
+            
+            while a != b - 1:
+                a += 1
+                box.append(a)
+                
+        box.append(loopof)
+        return box
+                   
+    number += 1
+    
+x = numm(num,loopof)
+print(x)
+
+Example 1:
+           Input: [1,2,6,9]
+
+           output: [1,2,3,4,5,6,7,8,9]
+Example 2: 
+
+            Input: [1,19]
+            Output: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
