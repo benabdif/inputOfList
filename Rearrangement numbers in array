@@ -1,0 +1,19 @@
+mylist_10 = [2,5,3,7,9,5,6]
+
+def num(mylist_10):
+  for x in range(1, len (mylist_10)):
+    var = mylist_10[x]
+    com = x-1
+    
+
+    while com >= 0:
+      if var < mylist_10[com]:
+        mylist_10[com + 1] = mylist_10[com]
+        mylist_10[com] = var 
+        com = com - 1
+      else:
+        break
+  return mylist_10  
+
+x = num(mylist_10)
+print(x)
