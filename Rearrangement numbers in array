@@ -1,3 +1,5 @@
+First solution: 
+
 mylist_10 = [2,5,3,7,9,5,6]
 
 def num(mylist_10):
@@ -17,3 +19,27 @@ def num(mylist_10):
 
 x = num(mylist_10)
 print(x)
+
+
+
+
+Second Solution: 
+
+number = [2,1,-1,0,12,4,100,99]
+
+
+def num(number):
+    is_sort = True
+
+    while is_sort:
+        is_sort = False
+
+        for x in range(0,len(number)-1):
+            if number[x] > number[x+1]:
+                number[x], number[x+1] = number[x+1], number[x]
+                is_sort = True
+          
+    return number
+
+fadhel = num(number)
+print(fadhel)
