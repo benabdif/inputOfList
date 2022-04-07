@@ -1,0 +1,20 @@
+# try and except function Example
+
+num1 = None
+num2 = None
+
+
+def number(num1, num2):
+    a = True
+    while a:
+        try:
+            num1 = int(input('ent numnber one: '))
+            num2 = int(input('ent number two: '))
+            a = False
+        except:
+            print('This is not number')
+    return num1 + num2
+
+fadhel = number(num1, num2)
+
+print(fadhel)
