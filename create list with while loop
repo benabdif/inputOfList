@@ -1,0 +1,21 @@
+user_name = input('Enter your name: ')
+def myname(user_name):
+    print(f'Hello {user_name}')
+    box = []
+    question = input('Do you wnat add name in list: (Y) or (N) ? ')
+    while question != 'Y' and question != 'N':
+        print('Sorry, you have to type only Y or N only')
+        question = input('Do you wnat add name in list: (Y) or (N) ? ')
+
+    else:
+        while question == 'Y':
+            name_of_list = input('Enter name of list ')
+            box.append(name_of_list)
+            question = input('Do you wnat add name in list: (Y) or (N) ?')
+        else:
+            return box
+  
+result = myname(user_name)
+print(result)    
+        
+      
