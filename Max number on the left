@@ -1,0 +1,13 @@
+
+# type a function to find a Max number in the list, than return int number.
+
+def left_digit(strParam: str) -> int:
+    for x in range(len(strParam)):
+        if strParam[x].isdigit():
+            nuw_10 = strParam[x]
+            return int(nuw_10)
+            break
+        else:
+            pass
+           
+        
