@@ -1,0 +1,19 @@
+# Find Digits
+
+
+def findDigits(n):
+    
+    # Write your code here
+    box = []
+    cot = 0
+    newlist = str(n)
+    for x in newlist:
+        box.append(x)
+    fadhel = list(map(int, box))
+    for f in fadhel:
+        if f == 0:
+            pass
+        elif n % f == 0:
+             cot += 1
+        
+    return cot 
